@@ -23,7 +23,7 @@ class Cat
     public function setName($name)
     {
         if (strlen($name) < 3 || strlen($name) > 20) {
-            echo "Invalid name!";
+            echo "Invalid name!<br>";
         } else {
             $this->name = $name;
         }
@@ -37,7 +37,7 @@ class Cat
         if (is_int($age)) {
             return $this->age;
         } else {
-            echo "Invalid age!";
+            echo "Invalid age!<br>";
         }
     }
     public function getColor()
@@ -47,7 +47,7 @@ class Cat
     public function setColor($color)
     {
         if (strlen($color) < 3 || strlen($color) > 10) {
-            echo "Invalid color!";
+            echo "Invalid color!<br>";
         } else {
             $this->color = $color;
         }
@@ -61,7 +61,7 @@ class Cat
         if (in_array($sex, ['male', 'female'])) {
             $this->sex = $sex;
         } else {
-            echo "Invalid sex!";
+            echo "Invalid sex!<br>";
         }
     }
     public function getBreed()
@@ -71,7 +71,7 @@ class Cat
     public function setBreed($breed)
     {
         if (strlen($breed) < 3 || strlen($breed) > 20) {
-            echo "Invalid breed!";
+            echo "Invalid breed!<br>";
         } else {
             $this->breed = $breed;
         }
